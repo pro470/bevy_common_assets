@@ -64,7 +64,7 @@ where
 
     async fn load(
         &self,
-        reader: &mut dyn Reader,
+        _reader: &mut dyn Reader,
         _settings: &(),
         load_context: &mut LoadContext<'_>,
     ) -> Result<Self::Asset, Self::Error> {
