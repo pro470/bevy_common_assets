@@ -70,10 +70,10 @@ where
     ) -> Result<Self::Asset, Self::Error> {
         // Get the path from the load context
         let path = load_context.path().to_path_buf();
-        
+
         // Use rpkl to load and deserialize the PKL file
         let asset = rpkl::from_config::<A>(path)?;
-        
+
         Ok(asset)
     }
 

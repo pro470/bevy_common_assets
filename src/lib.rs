@@ -60,10 +60,6 @@ pub mod json;
 #[cfg_attr(docsrs, doc(cfg(feature = "msgpack")))]
 #[cfg(feature = "msgpack")]
 pub mod msgpack;
-/// Module containing a Bevy plugin to load assets from `postcard` files with custom file extensions.
-#[cfg_attr(docsrs, doc(cfg(feature = "postcard")))]
-#[cfg(feature = "postcard")]
-pub mod postcard;
 /// Module containing a Bevy plugin to load assets from `pkl` files with custom file extensions.
 #[cfg_attr(docsrs, doc(cfg(feature = "pkl")))]
 #[cfg(feature = "pkl")]
@@ -72,6 +68,10 @@ pub mod pkl;
 #[cfg_attr(docsrs, doc(cfg(feature = "plist")))]
 #[cfg(feature = "plist")]
 pub mod plist;
+/// Module containing a Bevy plugin to load assets from `postcard` files with custom file extensions.
+#[cfg_attr(docsrs, doc(cfg(feature = "postcard")))]
+#[cfg(feature = "postcard")]
+pub mod postcard;
 /// Module containing a Bevy plugin to load assets from `ron` files with custom file extensions.
 #[cfg_attr(docsrs, doc(cfg(feature = "ron")))]
 #[cfg(feature = "ron")]

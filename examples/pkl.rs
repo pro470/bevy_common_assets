@@ -4,10 +4,7 @@ use bevy_common_assets::pkl::PklAssetPlugin;
 
 fn main() {
     App::new()
-        .add_plugins((
-            DefaultPlugins,
-            PklAssetPlugin::<Level>::new(&["level.pkl"]),
-        ))
+        .add_plugins((DefaultPlugins, PklAssetPlugin::<Level>::new(&["level.pkl"])))
         .init_state::<AppState>()
         .add_systems(Startup, setup)
         .add_systems(Update, spawn_level.run_if(in_state(AppState::Loading)))

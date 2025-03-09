@@ -1,8 +1,8 @@
 use bevy_app::{App, Plugin};
 use bevy_asset::io::Reader;
 use bevy_asset::{Asset, AssetApp, AssetLoader, Handle, LoadContext};
-use std::marker::PhantomData;
 use bevy_reflect::TypePath;
+use std::marker::PhantomData;
 use thiserror::Error;
 
 /// Plugin to load your asset type `A` from csv files.
