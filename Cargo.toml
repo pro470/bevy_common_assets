@@ -21,6 +21,7 @@ msgpack = ["dep:rmp-serde"]
 xml = ["dep:quick-xml"]
 csv = ["dep:csv"]
 postcard = ["dep:postcard"]
+pkl = ["dep:rpkl"]
 
 [dependencies]
 bevy_app = "0.15.3"
@@ -37,6 +38,7 @@ quick-xml = { version = "0.36.2", features = [ "serialize" ], optional = true }
 serde = { version = "1" }
 anyhow = { version = "1" }
 postcard = {version = "1.0", features = ["use-std"], optional = true}
+rpkl = { version = "0.4", optional = true }
 
 [dev-dependencies]
 bevy = { version = "0.15.0" }
@@ -85,6 +87,11 @@ required-features = ["xml"]
 name = "csv"
 path = "examples/csv.rs"
 required-features = ["csv"]
+
+[[example]]
+name = "pkl"
+path = "examples/pkl.rs"
+required-features = ["pkl"]
 
 [[example]]
 name = "multiple_formats"
