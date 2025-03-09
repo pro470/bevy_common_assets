@@ -68,6 +68,10 @@ pub mod postcard;
 #[cfg_attr(docsrs, doc(cfg(feature = "pkl")))]
 #[cfg(feature = "pkl")]
 pub mod pkl;
+/// Module containing a Bevy plugin to load assets from `plist` files with custom file extensions.
+#[cfg_attr(docsrs, doc(cfg(feature = "plist")))]
+#[cfg(feature = "plist")]
+pub mod plist;
 /// Module containing a Bevy plugin to load assets from `ron` files with custom file extensions.
 #[cfg_attr(docsrs, doc(cfg(feature = "ron")))]
 #[cfg(feature = "ron")]
